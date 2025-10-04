@@ -1,99 +1,56 @@
-Customer Segmentation & Retention Analysis
-This project uses Python and interactive dashboards to analyze customer behavior, identify important customer segments, explore retention patterns, and translate findings into actionable business strategies.
+📒 Customer_Segmentation.ipynb – Analysis Notebook
+✨ Purpose
+This notebook uses Python to clean data, analyze customer transactions, and generate powerful insights about customer segments and retention. All code for data processing, analysis, and interactive charts is included here.
 
-🚀 Overview
-Goal: Segment customers, analyze retention and churn, and provide data-driven recommendations for business growth.
+🛠️ How to Use
+1. Open Notebook
 
-Key Steps:
+Recommended: Run on Google Colab for interactive Plotly charts
 
-Data cleaning and preparation
+Upload your CSV file (e.g. online.csv).
 
-Exploratory data analysis (EDA)
+Required columns: Invoice, Customer ID, Date, Amount, Product.
 
-RFM (Recency, Frequency, Monetary) segmentation
+3. Install Required Libraries
 
-KMeans clustering for segment discovery
+python
+pip install pandas numpy plotly scikit-learn
+Or use the project's requirements.txt.
 
-Cohort and retention analysis
+4. Run All Cells
 
-Business insights and actionable recommendations
+Execute from top to bottom to get all outputs and charts.
 
-📒 How to Use
-Open the Notebook
+🔍 What’s Inside
+Data Cleaning: Fixes missing values, data types, and duplicates.
 
-You can use Google Colab (recommended for interactive charts).
+EDA: Key metrics and distributions.
 
-Or, download and run locally using Jupyter.
+RFM Analysis: Segments customers by Recency, Frequency, Monetary Value.
 
-Prepare the Data
+KMeans Clustering: Finds optimal customer groups automatically.
 
-Add your transactions dataset (online.csv) with the expected columns (Invoice, Customer ID, Date, Amount, etc.).
+Cohort Analysis: Tracks retention and churn by join date.
 
-For Colab: upload CSV from your computer or load from Google Drive.
+Product & Trend Insights: Monthly and product sales analysis.
 
-Run All Cells
+Business Recommendations: Highlights actionable strategies.
 
-Make sure all dependencies are installed:
+📊 Output
+Interactive charts and tables appear in the notebook cells after you run them.
 
-text
-pandas
-numpy
-plotly
-scikit-learn
-Run the notebook from top to bottom for full analysis and visualization.
+Save your work with all cell outputs for easy sharing/viewing via GitHub or Colab.
 
-🗂️ Project Structure
-notebook/Customer_Segmentation.ipynb – All code, full analysis (data cleaning, EDA, RFM, clustering, cohorts, charts)
+🗃️ Sample Usage
+python
+import pandas as pd
+df = pd.read_csv("online.csv")  # change path if using Drive
+# Run cells from top or click "Runtime > Run All"
+👨‍💻 Author
+Notebook by Abdelrahman Mohamed Salem
+For analytics learning, freelance, and business improvement.
 
-dashboard/ – Interactive and PDF dashboards (see folder README for details)
+Tip:
+Use this notebook as a base for your own segmentation, clustering, or retention case studies.
 
-data/ – Place your (or sample) datasets here (not provided in this public repo)
-
-reports/ – Project report and dashboards as PDFs
-
-requirements.txt – List of required Python packages
-
-📊 Key Features
-Data cleaning: Handles missing values, types, duplicates
-
-RFM segmentation: Manual quantiles (Champions, Loyal, At Risk, Lost, etc.)
-
-KMeans segmentation: Finds optimal clusters with scaling and elbow method
-
-Cohort retention analysis: Visualizes retention heatmaps and churn
-
-Top products and trends: Monthly and weekly sales, product insights
-
-Interactive charts: Built with Plotly (run notebook or view dashboards)
-
-Actionable recommendations: Translating analytics into strategy
-
-📦 Requirements
-Python 3.x
-
-See requirements.txt for detailed package list
-
-Install with:
-
-text
-pip install -r requirements.txt
-⚡ Data
-This project expects a transaction dataset in CSV format.
-
-Typical columns: Invoice/Order ID, Customer ID, Date, Amount, Product.
-
-If you do not have access to the original dataset, add your data with matching structure, or request a sample format.
-
-📄 Output
-All findings, plots, and insights appear in the notebook.
-
-Dashboards and PDF reports are provided in the /dashboard/ and /reports/ folders.
-
-🤝 Acknowledgments
-Analysis and code by Abdelrahman Mohamed Salem.
-Feel free to use, share, or build on this project with attribution.
-
-📬 Contact
-For feedback, questions, or freelance inquiries, open an issue or contact via GitHub.
-
-
+(For dashboard and project-wide info, see their dedicated README files!)
